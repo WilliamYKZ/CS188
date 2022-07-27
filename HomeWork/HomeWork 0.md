@@ -58,5 +58,51 @@ What is the expected number of point after one roll?
 
 ### Answer
 
+The die is fair, so each side comes up with an equal probability, which, since there are 6 sides, is $\frac{1}{6}$. The expectation of a random variable $X$ is equal to $\sum_{x \in \operatorname{domain}(X)} x * P(x)$, Where domain($X$) denotes the set of all values $X$ could take on. In the case of this probelem, the random variable is the outcome of rolling a die, hence the domain is $\{1,2,3,4,5,6\}$, and each value has equal probability of $\frac{1}{6}$. Thus, the expectation is $\frac{1}{6} \sum_{x=1}^{6} x=\frac{1}{6} * 21=3.5$
+
+
+
+What is the expected number of point after two roll?
+
+### Answer
+
+The part could be done in the same way as part 1, however, as the number of possible values and probabilities grows, it becomes very tedious to enumerate all the outcomes. We will use the linearity of expectation, meaning $\mathrm{E}\left[X_{1}+X_{2}\right]=\mathrm{E}\left[X_{1}\right]+\mathrm{E}\left[X_{2}\right]$. Concretely, let $X_1$ and $X_2$ correspond to the outcome for die 1 and die 2 respectively. Then we are asked to compute: $\mathrm{E}\left[X_{1}+X_{2}\right]=\mathrm{E}\left[X_{1}\right]+\mathrm{E}\left[X_{2}\right]$. Since the value of rolling a die is independent of the value that has come up on previous rolls, these expectations are identical. $\mathrm{E}\left[X_{1}\right]=\mathrm{E}\left[X_{2}\right]=3.5$. Thus the answer is 7.
+
+
+
+What is the expected number of point after 100 roll?
+
+### Answer
+
+$\sum_{i=1}^{100} \mathrm{E}\left[X_{i}\right]=100 * 3.5=350$
+
+
+
+## Question 4 Conditional Probabilities
+
+Select all of the following statements that are true for all joint distributions over $X$ and $Y$.
+
+![](https://github.com/WilliamYKZ/Picture/raw/main/Picture/Screen%20Shot%202022-07-27%20at%205.15.04%20AM.png)
+
+### Answer
+
+a) is only true in general if x and y are independent. 
+
+b) $P(x \mid y)=\frac{P(x, y)}{P(y)} \rightarrow \frac{P(x, y) * P(y)}{P(y)}=P(x, y)$
+
+c) This is only true in general if x and y are independent: $P(x \mid y) P(y \mid x)=\frac{P(x, y) P(x, y)}{P(x) P(y)}$
+
+d) This is only true in general if x and y are independent. 
+
+
+
+## Question 5 Logarithms
+
+Select all of the following statements that are true. 
+
+![](https://github.com/WilliamYKZ/Picture/raw/main/Picture/Screen%20Shot%202022-07-27%20at%206.21.07%20AM.png)
+
+a) This is not true $2^{x*y}=(2^x)^y$
+
 
 
